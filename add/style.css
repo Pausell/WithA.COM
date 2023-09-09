@@ -1,0 +1,134 @@
+/*1.0.5*/
+html{font-size:16px}
+.vh{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;clip:rect(0 0 0 0);overflow:hidden;}
+.white{display:inline-block}
+.black{position: absolute !important; top: -9999px !important; left: -9999px !important}
+body{font-family:Times, TimesNewRoman, "Times New Roman";padding:0px;margin:0px}
+*{box-sizing:border-box}
+pre{white-space:pre-wrap;font-family:inherit;font-size:inherit;line-height:inherit;margin:0;padding:0;}
+a{text-decoration:none}
+input,textarea,input:autofill,textarea:autofill{font-size:inherit;width:100%;padding:.5rem;background:transparent;border-radius:0;border:.15em inset #ffffff}
+button,.button{color:#000;border:.15em outset black}
+button:hover,button:active,button:focus,.button:hover,.button:active,.button:focus{border:.15em inset darkgray}
+.button{font-size:inherit;display:inline-block;position:relative;cursor:pointer;padding:.5em;background:none;font-family:"Arial";font-weight:900;letter-spacing:.4em}
+.search{color:#000000;border:.15em solid transparent;border-right:.15em dashed rgba(0,0,0,.5)}
+.button_string{display:flex;flex-wrap:nowrap;align-items:center;overflow:auto}
+.button_string *{margin-right:.5em;white-space:nowrap}
+.bye{border:.15em solid hsl(120, 100%, 20%)}
+.bye:hover,.bye:active,.bye:focus{border:.15em solid hsl(0, 100%, 50%)}
+.warn{border:.15em solid hsl(120, 100%, 20%)}
+.warn:hover,.warn:active,.warn:focus{border:.15em solid hsl(50,100%,50%)}
+.invalidate{border:.15em solid hsl(186 100% 69%)}
+.invalidate:hover,.bye:active,.bye:focus{border:.15em solid hsl(0, 100%, 50%)}
+.bred{border:.15em solid hsl(0, 100%, 50%)}
+.bred:hover,.bgreen:active,.bgreen:focus{border:.15em solid hsl(0, 100%, 50%)}
+.bgreen{border:.15em solid hsl(120, 100%, 20%)}
+.bgreen:hover,.bgreen:active,.bgreen:focus{border:.15em solid hsl(120, 100%, 20%)}
+.bblue{border:.15em solid hsl(186 100% 69%)}
+.bblue:hover,.bgreen:active,.bgreen:focus{border:.15em solid hsl(186 100% 69%)}
+.byellow{border:.15em solid hsl(50,100%,100%)}
+.byellow:hover,.byellow:active,.byellow:focus{border:.15em solid hsl(50,100%,100%)}
+.bspaced{margin-bottom:1em}
+.padding10px{padding:10px}
+.flex-nowrap{display:flex;flex-wrap:nowrap}
+.flex-wrap{display:flex;flex-wrap:wrap}
+#container{padding:4%}
+.active{box-shadow:0px -20px 8px -12px rgba(0,0,0,.5);border-radius:64px}
+.activegreen{box-shadow:0px -20px 8px -12px rgba(0,51,0,1);border-radius:64px}
+.activegreenu{box-shadow:0px 20px 8px -12px rgba(0,51,0,1);border-radius:64px}
+.igation{display:flex}
+.igation a svg{height:auto}
+.igation a,.igation .a{width:25%;padding:4%}
+.vlist{padding:0;list-style-type:none}
+.vlist li{
+counter-increment:custom-counter;
+position:relative
+}
+.vlist li::before{
+content:counter(custom-counter) ".";
+position:absolute;
+top:-1.2em;left:0;
+}
+.vertical{display:flex;flex-direction:column}
+.vertical a{padding:4%;width:100%}
+.opaquenumber li{color:rgba(0,0,0,.5)}
+.accordion > input[type="checkbox"]{position:absolute;left:-100vw}
+.accordion .content{overflow-y:hidden;height:0}
+.accordion > input[type="checkbox"]:checked ~ .content{height:auto;overflow:visible;margin-bottom:2rem;margin-right:2rem}
+.accordion label{display:block}
+.accordion{}
+.accordion > input[type="checkbox"]:checked ~ .content{border:.5px solid rgba(0,0,0,.3);border-top:0}
+.accordion .handle{margin:0;position:relative}
+.handle label{margin-right:2rem}
+.handle label span{opacity:.75}
+.accordion label{cursor:pointer;font-weight:normal}
+.accordion label:hover,.accordion label:focus{background:rgba(0,0,0,.2)}
+.accordion .handle label:before {content:"";display:inline-block;position:absolute;left:5px;font-size:.58em;line-height:1.556em}
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {content:"";position:absolute}
+.collection ol{padding-left:30px}
+.collection .subhead2{padding-right:1rem}
+.subhead2{padding-bottom:1rem}
+.collection{flex:1 1 440px;max-width:880px}
+.chapters{display:grid;grid-template-columns:auto auto auto auto auto;overflow:auto;opacity:.8}
+.collection ol li .chapters a{display:inline-block;padding:1rem;flex:1;text-align:center}
+.chapters :first-child{grid-column:1 / -1;flex-grow:1;text-align:left !important}
+.crumbs{display:inline-block;display:flex;flex-wrap:wrap;align-items:center}
+.crumbs a{padding:1rem;display:inline-block}
+#read{padding:10px}
+.strong{font-weight:700}
+.width100{width:100%}
+.ib{display:inline-block}
+.hidden{display:none}
+.wrap{white-space:normal;word-wrap:break-word;resize:vertical}
+.divspace{display:flex;flex-direction:column;justify-content:space-between}
+.subnav{display:flex;flex-wrap:wrap;justify-content:space-between;text-align:center;position:sticky;bottom:0;padding-top:2em;padding-bottom:2em}
+.subnav a{color:black;margin-top:1em;margin-bottom:1em;width:25%;width:125px;padding:.75em;border-radius:12px;background-color:#ffffff;box-shadow:inset 0px 0px 25px rgba(128,128,128,.5)}
+.subnav a:hover,.subnav a:focus{box-shadow:inset 0px 0px 25px rgba(0,0,0,.75)}
+.subnav a:active{color:red;box-shadow:inset 0px 0px 25px rgba(0,0,0,1)}
+@media(prefers-color-scheme:dark){
+input,textarea,input:autofill,textarea:autofill{color:#d1dde3;border:.15em inset #000000}
+button,.button{color:#fff;border:.15em outset white}
+button:hover,button:active,button:focus,.button:hover,.button:active,.button:focus{border:.15em inset white}
+.search{color:#d1dde3;border:.15em solid transparent;border-right:.15em dashed rgba(255,255,255,.5)}
+.white{position: absolute !important; top: -9999px !important; left: -9999px !important}
+.black{position:relative!important;top:0!important;left:0!important}
+.active{box-shadow:0px -20px 8px -12px rgba(255,255,255,.5);border-radius:64px;}
+.activegreen{box-shadow:0px -20px 8px -12px rgba(0,255,0,1);border-radius:64px}
+.bye{border:.15em solid hsl(120, 100%, 50%)}
+.bye:hover,.bye:active,.bye:focus{border:.15em solid hsl(0, 100%, 80%)}
+.warn{border:.15em solid hsl(120, 100%, 50%)}
+.warn:hover,.warn:active,.warn:focus{border:.15em solid hsl(60,100%,50%)}
+.invalidate{border:.15em solid hsl(206, 100%, 50%)}
+.invalidate:hover,.bye:active,.bye:focus{border:.15em solid hsl(0, 100%, 80%)}
+.bred{border:.15em solid hsl(0, 100%, 80%)}
+.bred:hover,.bgreen:active,.bgreen:focus{border:.15em solid hsl(0, 100%, 80%)}
+.bgreen{border:.15em solid hsl(120, 100%, 50%)}
+.bgreen:hover,.bgreen:active,.bgreen:focus{border:.15em solid hsl(120, 100%, 50%)}
+.bblue{border:.15em solid hsl(206, 100%, 50%)}
+.bblue:hover,.bgreen:active,.bgreen:focus{border:.15em solid hsl(206, 100%, 50%)}
+.byellow{border:.15em solid hsl(60,100%,50%)}
+.byellow:hover,.byellow:active,.byellow:focus{border:.15em solid hsl(60,100%,50%)}
+body{background:#000;color:#fff}
+p,button{color:#d1dde3}
+a{color:lightcyan}
+a:visited{color:lightcyan}
+a:hover,.a:focus{color:white}
+a:active{color:yellow}
+.opaquenumber li{color:rgba(255,255,255,.5)}
+.accordion label:hover,.accordion label:focus{background:rgba(255,255,255,.2)}
+.accordion > input[type="checkbox"]:checked ~ .content{border:.5px solid rgba(255,255,255,.3);border-top:0}
+.subnav a{color:white;background-color:rgba(0,0,0,.5);box-shadow:inset 0px 0px 25px rgba(0,0,0,.5)}
+.subnav a:hover,.subnav a:focus{box-shadow:inset 0px 0px 25px rgba(128,128,128,.75)}
+.subnav a:active{color:yellow;box-shadow:inset 0px 0px 25px rgba(128,128,128,1)}
+}
+@media screen and (min-width: 560px) {
+.chapters{padding-bottom:1rem}
+}
+@media screen and (max-width: 468px) {
+
+}
+@media only screen and (max-width: 600px) {
+  .button{
+    font-size: 1em;
+  }
+}
